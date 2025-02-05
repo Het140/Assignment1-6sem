@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het's Portfolio - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="bg-gray-800 w-64 p-6 flex flex-col">
+            <div class="text-white text-2xl font-bold mb-6">Het's Dashboard</div>
+            <nav>
+                <ul class="space-y-4 flex-1">
+                    <li><a href="#overview" class="text-white hover:text-green-500">Overview</a></li>
+                    <li><a href="#projects" class="text-white hover:text-green-500">Projects</a></li>
+                    <li><a href="#services" class="text-white hover:text-green-500">Services</a></li>
+                    <li><a href="#contact" class="text-white hover:text-green-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-3xl font-semibold">Dashboard Overview</h1>
+                <div>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Log Out</button>
+                </div>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Total Projects</h3>
+                    <p class="text-3xl text-green-500">3</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Services Offered</h3>
+                    <p class="text-3xl text-green-500">1</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Clients Worked With</h3>
+                    <p class="text-3xl text-green-500">0</p>
+                </div>
+            </div>
+
+            <!-- Recent Activities -->
+            <div id="recent-activities" class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Recent Activities</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <div class="text-green-500 font-semibold mr-3">📅</div>
+                        <div>
+                            <p class="text-gray-700">Completed UI/UX design for Project One.</p>
+                            <span class="text-sm text-gray-500">2 days ago</span>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="text-green-500 font-semibold mr-3">📅</div>
+                        <div>
+                            <p class="text-gray-700">Added new features to Urban Shoes website.</p>
+                            <span class="text-sm text-gray-500">1 week ago</span>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="text-green-500 font-semibold mr-3">📅</div>
+                        <div>
+                            <p class="text-gray-700">Published a blog post on UI trends for 2025.</p>
+                            <span class="text-sm text-gray-500">2 weeks ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Projects Section -->
+            <section id="projects" class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+                <ul class="space-y-4">
+                    <li class="text-gray-700">Project 1: Urban Shoes Website Design</li>
+                    <li class="text-gray-700">Project 2: UI/UX for E-commerce Website</li>
+                    <li class="text-gray-700">Project 3: Personal Blog Design </li>
+                </ul>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Services</h2>
+                <ul class="space-y-4">
+                    <li class="text-gray-700">UI/UX Design</li>
+                    <li class="text-gray-700">Website Development</li>
+                    <li class="text-gray-700">Brand Identity</li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+                <form action="#" method="post">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded-lg" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
